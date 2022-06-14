@@ -1,0 +1,42 @@
+.Webmenu{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: aliceblue;
+  
+}
+.web-option{
+font-size: 20px;
+margin-right: 16px;
+font-weight: 700;
+
+
+}
+
+.web-option-title{
+    transition: .2s;
+}
+
+.web-option-title:hover{
+    color: #3874c7;
+    transform: scale(1.1)
+}
+.web-option a{
+  
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+
+.web-option-img{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    width: 25px;
+}
+
+.web-option:last-child{
+    margin-right: 0px;
+}

@@ -1,0 +1,149 @@
+.about{
+   
+    font-family: 'Lora';
+    width: 90%;
+    
+    padding: 10px;
+   margin: 10px auto;
+}
+
+.about-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.about-picture{
+  height: 420px;
+}
+
+.about-info{
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 60px;
+
+}
+.about-job{
+  font-size: 30px;
+}
+
+.about-tagline{
+  font-size: 20px;
+  margin-top: 10px;
+  
+}
+
+
+
+
+
+.about-name{
+  color: #1473bc;
+  font-size: 32px;
+  font-weight: bold;
+
+}
+
+
+
+
+/* From uiverse.io by @Custyyyy */
+.buttons{
+  display: flex;
+  flex-direction: row;
+ 
+
+}
+.btn{
+
+
+  margin: 15px auto;
+ 
+
+ 
+   
+}
+.button1 {
+  
+  
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    border-radius: 9px;
+    background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);    font-size: 18;
+    font-family: "Lora";
+    font-weight: bold;
+    font-size: 17px;
+ border:none;
+ color: white;
+
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+
+   .button2{
+     
+  
+  
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 13px;
+      padding-top: 13px;
+      border-radius: 9px;
+      background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);      border: none;
+      font-size: 17px;
+      font-family: "Lora";
+      font-weight: bold;
+     color: white;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.4s;
+     }
+  
+   
+  
+
+   @media only screen and (max-width:720px){
+
+    .about{
+     
+      margin-top: 30px;
+      
+     
+     
+  }
+  
+    .about-top{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    .about-picture{
+      height: 280px;
+      margin: auto;
+    }
+
+    .about-info{
+      font-size: 30px;
+      margin: auto;
+    }
+
+    .about-name{
+    font-size: 30px;
+      
+    }
+    .about-job{
+      font-size: 20px;
+    }
+    
+    .about-tagline{
+      font-size: 15px;
+     
+      
+    }
+   }

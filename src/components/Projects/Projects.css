@@ -1,0 +1,174 @@
+.Project-section {
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
+.proj-row {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  margin: 10px;
+  transition: .6s;
+  border-radius: 6px;
+}
+
+.proj-row:hover{
+  transform: scale(1.01);
+}
+
+.Project-section .section-title {
+  width: 79%;
+  margin: auto;
+  padding: 30px;
+
+  font-family: "lora";
+  font-size: 25px;
+}
+
+/* .new1 {
+  margin: auto;
+  width: 160px;
+  height: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #089ce1,
+    #2288d5,
+    #3874c7,
+    #4860b5,
+    #554aa1
+  );
+} */
+/* 
+.new2 {
+  margin: 4px auto;
+  width: 130px;
+  height: 5px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #089ce1,
+    #2288d5,
+    #3874c7,
+    #4860b5,
+    #554aa1
+  );
+} */
+
+.Project-section .proj-items-inner {
+  background: #fff;
+  border-radius: 6px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  width: 350px;
+  height: 250px;
+  position: relative;
+}
+
+.proj-img img {
+  width: 350px;
+  height: 250px;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 6px;
+}
+
+.middle {
+  opacity: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.proj-row:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04aa6d;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Image Overlay Transition CSS */
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 254, 254, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "lora";
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.image_overlay>* {
+  transform: translateY(20px);
+  transition: 0.25s;
+}
+
+.image_overlay:hover>* {
+  transform: translateY(0);
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image_desc {
+  font-size: 1.25em;
+  margin: 0.25em;
+}
+
+
+@media only screen and (max-width:720px) {
+  .proj-row {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+
+
+  }
+
+  .Project-section .proj-items-inner {
+
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .proj-img img {
+    width: 100%;
+
+    margin: auto;
+  }
+}

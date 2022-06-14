@@ -1,0 +1,35 @@
+.Social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icon{
+    padding: 6px;
+    cursor: pointer;
+    margin: 6px;
+    
+}
+.social-icon p{
+   font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.social-img{
+    height: 40px;
+    transition: .6s;
+}
+
+.social-img:hover{
+    transform: scale(1.2)
+}
+
+@media only screen and (max-width:720px) {
+    .social-img{
+    height: 32px;
+    }
+}

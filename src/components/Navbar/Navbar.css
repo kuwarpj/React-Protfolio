@@ -1,0 +1,65 @@
+.Navbar {
+    display: flex;
+    font-family: "Lora";
+    justify-content: space-between;
+    flex: 1;
+
+    position: relative;
+    align-items: center;
+    width: 79%;
+    margin: auto;
+    background-color: aliceblue;
+
+
+
+}
+
+.menu {
+
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.mob-menu {
+    font-size: 24px;
+
+}
+
+.mobile-menu {
+    display: none;
+
+}
+
+.web-menu {
+    display: flex;
+}
+
+.title {
+    display: flex;
+    font-size: 36px;
+    color: #3874c7;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:720px) {
+
+    .Navbar {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .web-menu {
+        display: none;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
