@@ -1,0 +1,381 @@
+.container1 {
+  margin: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.container1 .title-wrapper {
+  margin-block-end: 40px;
+  font-family: "Ubuntu";
+}
+
+.title-wrapper .section-text {
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.project-card {
+  padding: 24px;
+
+  margin: auto;
+
+  display: flex;
+  width: 90%;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-content {
+  text-align: start;
+  margin: auto;
+  margin-left: 2rem;
+}
+
+.project-card-2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-content .card-tag {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #3874c7;
+  text-transform: uppercase;
+}
+
+.card-content .card-title {
+  font-size: 26px;
+  font-family: "Poppins";
+}
+
+.card-content .card-text {
+  font-family: "Poppins";
+  font-size: 14px;
+  margin-block-end: 20px;
+}
+
+.card-content .span {
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #3874c7;
+  font-weight: 550;
+}
+
+.card-content a {
+  text-decoration: none;
+}
+
+.card-banner img {
+  margin-top: 4rem;
+  margin-bottom: 0;
+  margin-right: 3rem;
+
+  width: 550px;
+  height: 370px;
+}
+
+.card-content-3 {
+  text-align: start;
+
+  padding: 68px;
+}
+
+.card-content-3 .card-title {
+  font-size: 26px;
+  font-family: "Poppins";
+}
+
+.card-content-3 .card-tag {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #3874c7;
+  text-transform: uppercase;
+}
+
+.card-content-3 .card-text {
+  font-family: "Poppins";
+  margin-block-end: 20px;
+  font-size: 14px;
+}
+.card-content-3 .span {
+  font-size: 16px;
+  color: #3874c7;
+  font-weight: 550;
+  font-family: "Poppins";
+}
+
+.card-content-3 a {
+  text-decoration: none;
+}
+
+.project-card-3 .card-banner img {
+  width: 450px;
+  height: 370px;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.card-content-4 {
+  text-align: start;
+  margin: auto;
+  padding: 68px;
+}
+
+.card-content-4 .card-title {
+  font-size: 26px;
+  font-family: "Poppins";
+}
+
+.card-content-4 .card-tag {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #3874c7;
+  text-transform: uppercase;
+}
+
+.card-content-4 .card-text {
+  font-family: "Poppins";
+  margin-block-end: 20px;
+  font-size: 14px;
+}
+
+.card-content-4 .span {
+  font-size: 16px;
+  color: #3874c7;
+  font-weight: 550;
+  font-family: "Poppins";
+}
+
+.card-content-4 a {
+  text-decoration: none;
+}
+
+.project-card-4 .card-banner img {
+  margin-bottom: 0;
+  margin: auto;
+
+  width: 450px;
+  height: 370px;
+}
+.project-card .btn-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.project-card .btn-text:is(:hover, :focus-visible) {
+  gap: 10px;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 2560px) {
+}
+
+@media only screen and (max-width: 920px) {
+  .project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-content {
+    padding: 18px;
+
+    text-align: start;
+  }
+
+  .project-column {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-card-3 {
+    margin-right: 1.2rem;
+    margin-left: 0.9rem;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 3rem;
+  }
+
+  .project-card-4 {
+    padding: 18px;
+    margin-right: 1.2rem;
+    margin-left: 0.9rem;
+  }
+
+  .card-banner img {
+    margin: auto;
+  }
+
+  .project-card-3 .card-banner img {
+    width: 550px;
+    height: 370px;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .card-content-3 {
+    margin: auto;
+    padding: 38px;
+  }
+  .card-content-4 {
+    margin: auto;
+    padding: 38px;
+  }
+
+  .project-card-4 .card-banner img {
+    width: 550px;
+    height: 370px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .project-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-content {
+    text-align: start;
+
+    padding: 10px 5px 10px 8px;
+    margin: 10px 5px 40px 5px;
+  }
+
+  .project-column {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-card-3 {
+    padding: 10px;
+    margin-bottom: 3rem;
+  }
+
+  .project-card-4 {
+    padding: 18px;
+    margin-right: 1.2rem;
+    margin-left: 0.9rem;
+  }
+
+  .card-content-3 {
+    padding: 10px 5px 10px 5px;
+    margin: 10px 5px 40px 5px;
+  }
+  .card-content-4 {
+    margin: 10px 5px 40px 5px;
+    padding: 10px 5px 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .project-card {
+    padding: 9px;
+  }
+
+  .project-card-3 {
+  }
+  .project-card-4 .card-banner img {
+    width: 100%;
+  }
+
+  .project-card-3 .card-banner img {
+    width: 100%;
+  }
+
+  .card-banner img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .project-card {
+    padding: 15px;
+  }
+
+  .card-content {
+    text-align: start;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .project-column {
+    display: flex;
+  }
+
+  .project-card-3 {
+    padding: 15px;
+
+    margin: auto auto 3rem auto;
+  }
+
+  .project-card-4 {
+    padding: 15px;
+
+    margin: auto auto 3rem auto;
+  }
+
+  .card-banner img {
+    width: 100%;
+  }
+
+  .project-card-3 .card-banner img {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0;
+  }
+  .card-content-3 {
+    padding: 10px;
+  }
+  .card-content-4 {
+    padding: 10px;
+  }
+
+  .project-card-4 .card-banner img {
+    width: 100%;
+  }
+}

@@ -1,15 +1,42 @@
-import React from "react";
-import "./Navbar.css";
+import React from 'react'
+import './Navbar.css'
 
-import hamburg2 from "../../img/square.png";
-import Webmenu from "./Webmenu";
-import { useState } from "react";
-import Mobilemenu from "./Mobilemenu";
+import hamburg2 from '../asset/img/square.png'
+import Webmenu from './Webmenu'
+import { useState, useEffect } from 'react'
+import Mobilemenu from './Mobilemenu'
+
 function Navbar() {
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setisOpen] = useState(false)
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [navbarColor, setNavbarColor] = useState('transparent')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.pageYOffset
+      setScrollPosition(currentScrollPosition)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (scrollPosition > 30) {
+      setNavbarColor('#FFFFFF') // change to desired color when scrolling down
+    } else {
+      setNavbarColor('transparent') // restore to original color when scrolling up
+    }
+  }, [scrollPosition])
   return (
-    <div className="Navbar">
-      <div className="title">Kuwar</div>
+    <div
+      className="Navbar"
+      style={{ backgroundColor: navbarColor, }}
+    >
+      <div className="title">Kuwar.</div>
       <div className="menu">
         <div className="web-menu">
           <Webmenu />
@@ -24,7 +51,7 @@ function Navbar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

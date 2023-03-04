@@ -1,10 +1,7 @@
 import React from "react";
 import "./Mobilemenu.css";
-import project from "../../img/project-management.png";
-import Skill from "../../img/Skills.png";
-import works from "../../img/works.png";
-import contact from "../../img/Contact.png";
-import close from "../../img/close.png";
+
+import close from "../asset/img/close.png";
 const Mobilemenu = ({ isOpen, setisOpen }) => {
   return (
     <div className="Mobilemenu">
@@ -13,35 +10,43 @@ const Mobilemenu = ({ isOpen, setisOpen }) => {
       </div>
       <div className="mobile-options">
         <div className="mobile-option">
-          <a href="#Skills">
-            <img className="mobile-option-img" src={Skill} alt="project"></img>
+          <a href='#'>
+            <p className='web-option-title'>Home</p>
+          </a>
+        </div>
+        <div className="mobile-option">
+          <a href='#About'>
+            <p className='web-option-title'>About</p>
+          </a>
+        </div>
+        <div className="mobile-option">
+          <a href='#Skills'>
             <p className='web-option-title'>Skills</p>
           </a>
         </div>
         <div className="mobile-option">
-          <a href="#Projects">
-            <img
-              className="mobile-option-img"
-              src={project}
-              alt="project"
-            ></img>
+          <a href='#services'>
+            <p className='web-option-title'>Services</p>
+          </a>
+        </div>
+        <div className="mobile-option">
+          <a href='#work'>
             <p className='web-option-title'>Project</p>
           </a>
         </div>
         <div className="mobile-option">
-          <a href="#Wroks">
-            <img className="mobile-option-img" src={works} alt="project"></img>
+          <a href='#Clients'>
             <p className='web-option-title'>Works</p>
           </a>
         </div>
         <div className="mobile-option">
-          <a href="#Contact">
-            <img
-              className="mobile-option-img"
-              src={contact}
-              alt="project"
-            ></img>
-           <p className='web-option-title'>Contact</p>
+          <a href='#Testimonialss'>
+            <p className='web-option-title'>Testimonials</p>
+          </a>
+        </div>
+        <div className='mobile-option'>
+          <a href='#contact'>
+            <p className='web-option-title'>Contact</p>
           </a>
         </div>
       </div>

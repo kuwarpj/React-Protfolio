@@ -1,20 +1,61 @@
-.Footer{
-    font-size: 20px;
-    font-family: "lora";
-    font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 5px;
+.footer {
+  background: #ffff;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.footer-container .h1 {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 32px;
+  color: #3874c7;
+  margin-left: 4rem;
 }
 
-.footer-link{
-    color: #3874c7;
+.footer-container .h1 a {
+  text-decoration: none;
+  color: #3874c7;
+}
+.footer-container .copyright {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-right: 4rem;
 }
 
-.footer-link:hover{
-color: #554aa1;
+.footer .logo {
+  margin-bottom: 10px;
+}
+
+.copyright {
+}
+
+.copyright a {
+  display: inline-block;
+  color: var(--raw-seinna);
+}
+
+@media only screen and (max-width: 765px) {
+  .footer {
+    width: 100%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+  }
+
+  .footer-container .h1 {
+    font-size: 25px;
+    margin-right: 4rem;
+  }
+
+  .footer-container .copyright {
+    font-family: "Poppins";
+    font-size: 16px;
+    margin-left: 4rem;
+  }
 }

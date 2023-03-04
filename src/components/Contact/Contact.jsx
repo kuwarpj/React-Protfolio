@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Contact.css";
-import Phone from "../../img/linkedin.png";
-import message from "../../img/instagram.png";
-import address from "../../img/github.png";
+import Phone from "../asset/img/linkedin.png";
+import message from "../asset/img/instagram.png";
+import address from "../asset/img/github.png";
 import { useForm } from "react-hook-form";
 const Contact = () => {
   const [name, setName] = useState("");
@@ -44,8 +44,8 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="section-title">
+    <div className="con" id="contact">
+      <div className="section-title" >
         <h2>Contact us</h2>
         <div className="new1"></div>
         <div className="new2"></div>
@@ -78,11 +78,9 @@ const Contact = () => {
             </a>
           </div>
           <div className="right-side">
-            <div className="topic-text">Send us a message</div>
+            {/* <div className="topic-text">Send us a message</div> */}
             <p className="c-paragraph">
-              Wheather you have a question, want to start a project or simply
-              want to connect. Feel free to send me a message in the contact
-              form
+              Need to connect, start a project, or have any questions? Send me a message using the contact form. Looking forward to hearing from you!
             </p>
             <form ref={formRef}>
               <div className="input-box">
@@ -141,7 +139,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

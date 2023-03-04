@@ -1,65 +1,77 @@
 .Navbar {
-    display: flex;
-    font-family: "Lora";
-    justify-content: space-between;
-    flex: 1;
+  display: flex;
+  flex: 1;
+  z-index: 1000;
+  position: fixed;
 
-    position: relative;
-    align-items: center;
-    width: 79%;
-    margin: auto;
-    background-color: aliceblue;
+  width: 100%;
+  top: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color 0.5s ease;
+  animation: slideIn 1.3s ease forwards;
+}
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-
+* {
+  margin: 0;
 }
 
 .menu {
-
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
+  display: flex;
+  flex: 1;
 }
 
 .mob-menu {
-    font-size: 24px;
-
+  font-size: 24px;
 }
 
 .mobile-menu {
-    display: none;
-
+  display: none;
 }
 
 .web-menu {
-    display: flex;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-right: 8rem;
 }
 
 .title {
-    display: flex;
-    font-size: 36px;
-    color: #3874c7;
-    font-weight: bold;
+  font-family: "Saira Stencil One", cursive;
+  display: flex;
+
+  margin-left: 4rem;
+  font-size: 32px;
+  color: #3874c7;
 }
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width: 920px) {
+  .Navbar {
+    width: 100%;
+  }
 
-    .Navbar {
-        margin-top: 10px;
-        width: 100%;
-    }
+  .mobile-menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
 
-    .mobile-menu {
-        display: flex;
-        margin-right: 10px;
-    }
+  .web-menu {
+    display: none;
+  }
 
-    .web-menu {
-        display: none;
-    }
-
-    .title {
-        font-size: 24px;
-        margin-left: 10px;
-    }
+  .title {
+    font-size: 24px;
+    margin-left: 10px;
+  }
 }

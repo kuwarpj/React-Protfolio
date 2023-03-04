@@ -1,149 +1,162 @@
-.about{
-   
-    font-family: 'Lora';
-    width: 90%;
-    
-    padding: 10px;
-   margin: 10px auto;
+.about {
+  font-family: "Poppins";
+  width: 90%;
+
+  padding: 10px;
+  margin: 10px auto;
 }
 
-.about-top{
+.hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
- 
+  min-height: 100vh;
+  margin-bottom: 0px;
+  padding-top: 115px;
 }
 
-.about-picture{
-  height: 420px;
+.hero-banner {
+  max-width: 500px;
+  width: 100%;
+
+  margin-bottom: 30px;
 }
 
-.about-info{
-  font-size: 34px;
-  font-weight: bold;
-  margin-left: 60px;
+.hero-content h2 {
+  max-width: 100%;
 
-}
-.about-job{
-  font-size: 30px;
-}
+  font-size: 3em;
+  color: #d0e1fa;
+  text-shadow: 2px 2px #000;
 
-.about-tagline{
-  font-size: 20px;
-  margin-top: 10px;
-  
+  padding: 20px;
+  border-radius: 10px;
+
+  transition: all 0.3s ease-in-out;
 }
 
-
-
-
-
-.about-name{
-  color: #1473bc;
-  font-size: 32px;
-  font-weight: bold;
-
+.hero-content h2:hover {
+  transform: scale(1.1);
 }
 
-
-
-
-/* From uiverse.io by @Custyyyy */
-.buttons{
-  display: flex;
-  flex-direction: row;
- 
-
+.hero-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
-.btn{
-
-
-  margin: 15px auto;
- 
-
- 
-   
+.btn {
+  max-width: max-content;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.25s ease-in-out;
 }
-.button1 {
-  
-  
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 13px;
-    padding-top: 13px;
-    border-radius: 9px;
-    background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);    font-size: 18;
-    font-family: "Lora";
-    font-weight: bold;
-    font-size: 17px;
- border:none;
- color: white;
 
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-   }
+.btn-primary {
+  border-color: white;
+}
 
-   .button2{
-     
-  
-  
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 13px;
-      padding-top: 13px;
-      border-radius: 9px;
-      background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);      border: none;
-      font-size: 17px;
-      font-family: "Lora";
-      font-weight: bold;
-     color: white;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.4s;
-     }
-  
-   
-  
+.btn-primary:is(:hover, :focus) {
+  background: white;
+  color: hsl(0, 0%, 12%);
+}
+.hero .btn-primary {
+  margin-inline: auto;
+}
 
-   @media only screen and (max-width:720px){
-
-    .about{
-     
-      margin-top: 30px;
-      
-     
-     
+@media only screen and (min-width: 992px) {
+  .hero {
+    position: relative;
+    padding-top: 0;
+    height: 100vh;
   }
-  
-    .about-top{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    }
+  .hero-banner {
+    max-width: unset;
+    height: 100%;
+    margin-bottom: 0;
+  }
 
-    .about-picture{
-      height: 280px;
-      margin: auto;
-    }
+  .hero img {
+    height: 100%;
+    width: 57%;
+    margin-inline: auto;
+  }
 
-    .about-info{
-      font-size: 30px;
-      margin: auto;
-    }
+  .hero-content {
+    color: hsl(0, 0%, 100%);
 
-    .about-name{
-    font-size: 30px;
-      
-    }
-    .about-job{
-      font-size: 20px;
-    }
-    
-    .about-tagline{
-      font-size: 15px;
-     
-      
-    }
-   }
+    position: absolute;
+    top: 43%;
+    filter: drop-shadow(2px 4px 10px var(--black));
+  }
+
+  .hero .btn-primary:is(:hover, :focus) {
+    color: hsl(0, 0%, 12%);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero {
+    position: relative;
+    padding-top: 0;
+
+    min-height: 80vh;
+  }
+
+  .hero-banner {
+    max-width: unset;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .hero img {
+    height: 100%;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-content h2 {
+    max-width: 650px;
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .hero-banner {
+    margin-bottom: 0;
+  }
+
+  .hero img {
+    height: 100%;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-content h2 {
+    max-width: 450px;
+    font-size: 1.9rem;
+  }
+
+  .hero-title {
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+}

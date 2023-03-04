@@ -1,0 +1,180 @@
+.abouMe-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 40px;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 40px 20px 40px;
+}
+
+.abouMe-row img {
+  width: 100%;
+  animation: slide-in-left 2s ease-in-out;
+}
+
+.about-img {
+  width: 160%;
+}
+
+.about_myinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  animation: slide-in-right 2s ease-in-out;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.abouMe-row .aboutMe_title {
+  text-align: start;
+}
+
+.abouMe-row .aboutMe_title h2 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  font-family: "Ubuntu";
+}
+
+.abouMe-row h3 {
+  margin-top: 10px;
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  font-family: "Ubuntu";
+  font-weight: 800;
+}
+
+.about-description {
+  margin-top: 20px;
+}
+
+.about-description p {
+  text-align: justify;
+  font-family: "Poppins";
+
+  font-size: 15px;
+}
+
+/*  */
+/*  */
+
+/* Responsiveness */
+@media only screen and (min-width: 2560px) {
+  .abouMe-row img {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .abouMe-row .aboutMe_title h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .abouMe-row .aboutMe_title h2 {
+    font-size: 20px;
+    width: 35%;
+  }
+
+  .about-img {
+    padding: 0 !important;
+  }
+
+  .about_myinfo {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .abouMe-row {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    margin-right: 0 !important;
+    width: 60%;
+  }
+
+  .lang img {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .about_myinfo {
+    padding-left: 0px;
+  }
+
+  .about-description p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* .aboutMe-container {
+    padding: 30px 0px;
+    overflow: hidden;
+  } */
+
+  .abouMe-row .aboutMe_title h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .about-img {
+    padding: 0 !important;
+  }
+
+  .about-img img {
+    margin-right: 0 !important;
+    width: 100%;
+  }
+
+  .about-description p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-img img {
+    margin-right: 0 !important;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about-img img {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about_myinfo {
+    padding: 10px !important;
+    width: 120%;
+  }
+  .about-description p {
+    font-size: 14px;
+  }
+}

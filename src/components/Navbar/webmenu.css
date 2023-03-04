@@ -1,42 +1,56 @@
-.Webmenu{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    background-color: aliceblue;
-  
+.Webmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.web-option{
-font-size: 20px;
-margin-right: 16px;
-font-weight: 700;
+.web-option {
+  font-size: 16px;
 
-
+  font-weight: 500;
 }
 
-.web-option-title{
-    transition: .2s;
+.web-option-title {
+  transition: 0.2s;
+  margin-right: 30px;
 }
 
-.web-option-title:hover{
-    color: #3874c7;
-    transform: scale(1.1)
+.web-option-title:hover {
+  color: #3874c7;
+  transform: scale(1.1);
 }
-.web-option a{
-  
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-
-
-.web-option-img{
-    display: flex;
-    align-items: center;
-    margin: 4px;
-    width: 25px;
+.web-option a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
-.web-option:last-child{
-    margin-right: 0px;
+.web-option-img {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+  width: 25px;
+}
+
+.web-option:last-child {
+  margin-right: 0px;
+}
+
+.res-button {
+  font-family: "Ubuntu";
+  background-color: #3874c7; /* Green background color */
+  border: none; /* Remove the default button border */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Add some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as a block element */
+  font-size: 16px; /* Font size */
+  border-radius: 4px; /* Add some rounding */
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+.res-button:hover {
+  cursor: pointer;
+  background-color: #6697db; /* Darker green on hover */
 }

@@ -1,35 +1,132 @@
-.Social{
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-family: "Poppins";
+}
+
+.stats-card {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  width: 18.5rem;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+
+  transition: 0.25s ease-in-out;
+}
+
+.stats-card:is(:hover, :focus) {
+  transform: translateY(-5px);
+}
+
+.stats-card .card-icon {
+  background: #3874c7;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
+
+.stats-card .card-icon img {
+  width: 70%;
+  filter: invert(1);
+}
+
+.stats-card .card-title {
+  width: calc(100% - 95px);
+  color: #3874c7;
+  text-align: center;
+}
+
+.stats-card .card-title strong {
+  display: block;
+  color: black;
+  font-size: initial;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+.stats-card h2 {
+  font-size: calc(1.813rem + 1vw);
+}
+
+@media only screen and (max-width: 1148px) {
+  .stats-card {
+    width: 15.5rem;
     display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1009px) {
+  .stats {
+    padding-block: 40px;
+  }
+  .stats-card {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
 
-.social-icon{
-    padding: 6px;
-    cursor: pointer;
-    margin: 6px;
-    
-}
-.social-icon p{
-   font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-}
-
-.social-img{
-    height: 40px;
-    transition: .6s;
+@media only screen and (max-width: 865px) {
+  .stats {
+    padding-top: 40px;
+  }
+  .stats-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
 
-.social-img:hover{
-    transform: scale(1.2)
+@media only screen and (max-width: 729px) {
+  .stats {
+    padding-block: 40px;
+  }
+  .stats-card {
+    width: 50%;
+
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
 
-@media only screen and (max-width:720px) {
-    .social-img{
-    height: 32px;
-    }
+@media only screen and (max-width: 450px) {
+  .stats {
+    padding-top: 10px;
+  }
+  .stats-card {
+    display: flex;
+    width: 100%;
+  }
+
+  .stats-card .card-title strong {
+    font-size: 14px;
+  }
+
+  .stats-card h2 {
+    font-size: calc(1.513rem + 1vw);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .stats {
+    padding-top: 40px;
+  }
+  .stats-card {
+    display: flex;
+    width: 100%;
+  }
 }

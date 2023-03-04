@@ -1,35 +1,50 @@
+.con {
+  overflow: hidden;
+}
 
-.container{
-font-family: "lora";
- color: black;
+.section-title {
+  margin-top: 5rem;
+}
+
+.section-title h2 {
+  font-family: "Ubuntu";
+  margin-bottom: 2rem;
+}
+.container {
+  font-family: "Poppins";
+  color: black;
   width: 79%;
-  background:aliceblue;
+  background-color: #ffffff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
- margin: auto;
- margin-bottom: 20px;
+  margin: auto;
+  margin-bottom: 5rem;
 }
-.container .content{
-
+.container .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container .content .left-side{
+.container .content .left-side {
   width: 25%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   margin-top: 15px;
   position: relative;
 }
 
-.content .left-side::before{
-    content: " ";
+.left-side a {
+  text-decoration: none;
+  color: #3874c7;
+}
+.content .left-side::before {
+  content: " ";
   position: absolute;
   height: 70%;
   width: 2px;
@@ -38,44 +53,47 @@ font-family: "lora";
   transform: translateY(-50%);
   background: #3874c7;
 }
-.content .left-side .details{
+.content .left-side .details {
   margin: 14px;
   text-align: center;
 }
-.content .left-side .details i{
+.content .left-side .details i {
   font-size: 30px;
   color: #3e2093;
   margin-bottom: 10px;
 }
-.content .left-side .details .topic{
+.content .left-side .details .topic {
   font-size: 18px;
   font-weight: 500;
 }
 .content .left-side .details .text-one,
-.content .left-side .details .text-two{
+.content .left-side .details .text-two {
   font-size: 14px;
   color: #0c0c0c;
 }
-.container .content .right-side{
+.container .content .right-side {
   width: 75%;
   margin-left: 75px;
 }
-.content .right-side .topic-text{
-  font-size: 25px;
+.content .right-side .topic-text {
+  font-size: 22px;
+  text-transform: uppercase;
   font-weight: 800;
-  color: #1095ce;
+  font-family: "Poppins";
+  color: #3874c7;
 }
 
-.c-paragraph{
-    font-weight: bold;
+.c-paragraph {
+  font-size: 15px;
+  font-weight: 500;
 }
-.right-side .input-box{
+.right-side .input-box {
   height: 50px;
   width: 100%;
   margin: 12px 0;
 }
 .right-side .input-box input,
-.right-side .input-box textarea{
+.right-side .input-box textarea {
   height: 100%;
   width: 100%;
   border: none;
@@ -86,72 +104,71 @@ font-family: "lora";
   padding: 0 15px;
   resize: none;
 }
-.right-side .message-box{
+.right-side .message-box {
   min-height: 110px;
 }
-.right-side .input-box textarea{
+.right-side .input-box textarea {
   padding-top: 6px;
 }
-.right-side .c-button{
+.right-side .c-button {
   display: inline-block;
   margin-top: 12px;
 }
-.c-img{
-  
-height: 45px;
-transition: .6s;
+.c-img {
+  height: 45px;
+  transition: 0.6s;
 }
 
-.c-img:hover{
+.c-img:hover {
   transform: scale(1.2);
 }
-.right-side .c-button input[type="button"]{
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  font-family: "Lora";
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);  cursor: pointer;
-  transition: all 0.3s ease;
+.right-side .c-button input[type="button"] {
+  font-family: "Ubuntu";
+  background-color: #3874c7; /* Green background color */
+  border: none; /* Remove the default button border */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Add some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as a block element */
+  font-size: 16px; /* Font size */
+  border-radius: 4px; /* Add some rounding */
+  transition: background-color 0.3s ease; /* Add a smooth transition */
 }
-.c-button input[type="button"]:hover{
-  background-image: linear-gradient(to right, #089ce1, #4199e7, #6296ea, #7e92ea, #988de7);}
+.c-button input[type="button"]:hover {
+  background-color: #6697db;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 720px) {
-  .container{
-    
- 
+  .container {
     width: 70%;
     padding: 30px 40px 40px 35px;
   }
-  .container .content .right-side{
-   width: 75%;
- 
-}
+  .container .content .right-side {
+    width: 75%;
+  }
 }
 @media (max-width: 820px) {
-  .container{
+  .container {
     margin: 40px auto;
     height: 100%;
   }
-  .container .content{
+  .container .content {
     flex-direction: column-reverse;
   }
- .container .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container .content .left-side::before{
-   display: none;
- }
- .container .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
 }

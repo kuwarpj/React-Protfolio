@@ -1,38 +1,69 @@
 import React from "react";
 import "./Social.css";
 
-import github from "../../img/github.png";
-import linkedin from "../../img/linkedin.png";
-import facebook from "../../img/facebook.png";
-import instagram from "../../img/instagram.png";
+import exp from "../asset/img/1.png";
+import pro from "../asset/img/2.png"
+import clien from "../asset/img/3.png"
+
 const Social = () => {
   return (
     <div className="Social">
-      <a href="https://github.com/kuwarpj" target="_blank">
-        <div className="social-icon">
-          <img className="social-img" src={github}></img>
-          <p>Github</p>
+
+
+      <div className="stats" id="stats">
+
+
+
+        <div className="stats-card">
+
+          <div className="card-icon">
+            <img src={exp} alt="Badge icon" />
+          </div>
+
+          <h2 className="h2 card-title">
+            1+ <strong>Years of Experience</strong>
+          </h2>
+
+
+
         </div>
-      </a>
-      <a href="https://www.linkedin.com/in/kuwarparasarjha/" target="_blank">
-        <div className="social-icon">
-          <img className="social-img" src={linkedin}></img>
-          <p>LinkeDin</p>
+
+
+
+        <div href="#" className="stats-card">
+
+          <div className="card-icon">
+            <img src={pro} alt="Checkmark icon" />
+          </div>
+
+          <h2 className="h2 card-title">
+            15+ <strong>Completed Projects</strong>
+          </h2>
+
+
+
         </div>
-      </a>
-      <a href="https://www.facebook.com/Kumaar2500/" target="_blank">
-        <div className="social-icon">
-          <img className="social-img" src={facebook}></img>
-          <p>Facebook</p>
+
+
+
+        <div href="#" className="stats-card">
+
+          <div className="card-icon">
+            <img src={clien} alt="Peoples rating icon" />
+          </div>
+
+          <h2 className="h2 card-title">
+            10+ <strong>Happy Clients</strong>
+          </h2>
+
+
+
         </div>
-      </a>
-      <a href="https://www.instagram.com/kuwar_2500/" target="_blank">
-        <div className="social-icon">
-          <img className="social-img" src={instagram}></img>
-          <p>Instagram</p>
-        </div>
-      </a>
+
+
+      </div>
     </div>
+
   );
 };
 
